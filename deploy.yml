@@ -1,0 +1,11 @@
+---
+- name: Deploy instance
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  tasks:
+    - name: Deploy instance
+      cloud.terraform.terraform:
+        project_path: "{{ lookup('env', 'PWD') }}"
+        state: present
+        force_init: true
