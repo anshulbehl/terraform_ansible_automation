@@ -72,7 +72,7 @@ resource "aws_instance" "app-server" {
 }
 
 provider "aap" {
-  host     = "https://controller.ansible-automates.co.za"
+  host     = "https://localhost"
   username = "anshul"
   password = "ansible"
   insecure_skip_verify = true
