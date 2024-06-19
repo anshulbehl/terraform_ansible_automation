@@ -76,6 +76,7 @@ provider "aap" {
   username = "anshul"
   password = "ansible"
   insecure_skip_verify = true
+  timeout = 30
 }
 
 resource "aap_host" "app-server" {
